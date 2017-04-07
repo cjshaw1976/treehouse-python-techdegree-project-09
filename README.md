@@ -2,4 +2,23 @@
 
 This is my submission for review of the Python Techdegree course, Project 9, Improve a Django Project
 
-A requirements.txt is included for creating your own virtual enviroment.
+A requirements.txt is included for creating your own virtual environment.
+
+To install: 
+1. Download and extract the zip on your own pc. cd into the created directory.
+2. Create and start a virtual environment: 
+  python3 -m venv myvenv
+  source myvenv/bin/activate
+3. Install the project requirements
+  pip install -r requirements.txt
+4. Start the server
+  python manage.py runserver 0.0.0.0:8000
+You will now be able to open a webpage at 127.0.0.1:8000
+
+To run the tests with coverage:
+coverage run --omit=myenve/* manage.py test
+coverage report -m  
+coverage html
+
+For pep8 test
+flake8 menu/
