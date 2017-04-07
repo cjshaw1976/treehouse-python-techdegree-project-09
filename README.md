@@ -12,13 +12,13 @@ To install:
 3. Install the project requirements
   pip install -r requirements.txt
 4. Start the server
-  python manage.py runserver 0.0.0.0:8000
+  python manage.py runserver 0.0.0.0:8000</br>
 You will now be able to open a webpage at 127.0.0.1:8000
 
-To run the tests with coverage:
+To run the tests with coverage:</br>
 coverage run --omit=myenve/* manage.py test
 coverage report -m  
 coverage html
 
-For pep8 test
+For pep8 test</br>
 flake8 menu/
