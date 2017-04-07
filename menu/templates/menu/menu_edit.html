@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ block.super }} | {% if not form.season.value %}New Menu{% else %}Edit Menu{% endif %}{% endblock %}
+
+{% block body %}
+    <h1>{% if not form.season.value %}New Menu{% else %}Edit: {{ form.season.value }}{% endif %}</h1>
+    <form method="POST" class="menu-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
