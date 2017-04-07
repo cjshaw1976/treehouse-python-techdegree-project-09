@@ -16,8 +16,8 @@ To install:
 You will now be able to open a webpage at 127.0.0.1:8000
 
 To run the tests with coverage:</br>
-coverage run --omit=myenve/* manage.py test
-coverage report -m  
+coverage run --omit=myenve/* manage.py test</br>
+coverage report -m</br>
 coverage html
 
 For pep8 test</br>
